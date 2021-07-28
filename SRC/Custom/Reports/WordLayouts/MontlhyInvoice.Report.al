@@ -46,7 +46,6 @@ report 50030 "Montlhy Invoice"
             }
             column(CustomerTypeFilter1; CustomerTypeFilter1)
             {
-                OptionMembers = ,Guest,Abonement,Monthly;
             }
             column(CustomerTypeFilter2; CustomerTypeFilter2)
             {

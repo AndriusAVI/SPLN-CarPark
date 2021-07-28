@@ -3,8 +3,8 @@ page 50150 "Abonement Car Registering"
     Editable = true;
     PageType = List;
     SourceTable = "Posted Park Header";
-    SourceTableView = WHERE ("Customer Type" = FILTER (Abonement),
-                            Invalid = FILTER (false));
+    SourceTableView = WHERE("Customer Type" = FILTER(Abonement),
+                            Invalid = FILTER(false));
 
     layout
     {
@@ -60,7 +60,7 @@ page 50150 "Abonement Car Registering"
             }
             part("Parked Cars"; "Park Order Subform")
             {
-                SubPageLink = "Park Order No." = FIELD ("No.");
+                SubPageLink = "Park Order No." = FIELD("No.");
             }
         }
         area(factboxes)
@@ -115,7 +115,7 @@ page 50150 "Abonement Car Registering"
 
                     Durationn := PostedParkLineRec."Parking End Date" - PostedParkLineRec."Parking Date";
                     Clear(ParkingTicket);
-                    ParkingTicket.SetData(PostedParkLineRec."Vehicle No.", Durationn, PostedParkLineRec."Parking Date", PostedParkLineRec."Parking End Date");
+
                     ParkingTicket.SetTableView(PostedParkLineRec);
                     ParkingTicket.RunModal;
 
