@@ -134,8 +134,9 @@ page 50140 MontlhyCustDialog
             //MESSAGE(FORMAT(GenJournal."Line No."));
             //CODEUNIT.RUN(CODEUNIT::"Gen. Jnl.-Post",GenJournal);
 
-            PostCU.setDialog(true);
+            SingleInstanceCU.Set_HideDialog(true);
             PostCU.Run(GenJournal);
+            SingleInstanceCU.Set_HideDialog(false);
 
             CustLedgInv.SetFilter("Customer No.", CusNo);
             CustLedgInv.SetFilter("Document Type", Format(CustLedgInv."Document Type"::Invoice));
@@ -205,6 +206,8 @@ page 50140 MontlhyCustDialog
         CustLedgPaym: Record "Cust. Ledger Entry";
         SetAppliesToID: Codeunit "Cust. Entry-SetAppl.ID";
         PostAppn: Codeunit "CustEntry-Apply Posted Entries";
+
+        SingleInstanceCU: Codeunit SingleInstanceCU;
 
     procedure SetData(CustomerNo: Code[20])
     begin

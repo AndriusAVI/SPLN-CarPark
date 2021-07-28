@@ -78,6 +78,9 @@ codeunit 50010 ParkPosting
     begin
     end;
 
+
+
+
     procedure Post(var ParkHeaderRec: Record "Park Header")
     var
         ParkLineRec: Record "Park Line";
@@ -99,6 +102,9 @@ codeunit 50010 ParkPosting
         ApplyEntries: Codeunit "Gen. Jnl.-Apply";
         CLedgerEntry: Record "Cust. Ledger Entry";
         PostCU: Codeunit "Gen. Jnl.-Post";
+        HideDialog: Boolean;
+        EventSubscriber: Codeunit EventSubscriber;
+        SingleInstanceCU: Codeunit SingleInstanceCU;
     begin
         CurrRec.Get;
         if CustomerRec.Get(ParkHeaderRec."Customer No.") then
@@ -186,8 +192,9 @@ codeunit 50010 ParkPosting
 
                     GenJournal.Insert;
 
-                    PostCU.setDialog(true);
+                    SingleInstanceCU.Set_HideDialog(true);
                     PostCU.Run(GenJournal);
+                    SingleInstanceCU.Set_HideDialog(false);
 
                     GenJournal.Reset;
                     GenJournal.Init;
@@ -221,9 +228,9 @@ codeunit 50010 ParkPosting
                     GenJournal.Insert;
 
 
-                    //Codeunit for posting
-                    PostCU.setDialog(true);
+                    SingleInstanceCU.Set_HideDialog(true);
                     PostCU.Run(GenJournal);
+                    SingleInstanceCU.Set_HideDialog(false);
 
 
 
@@ -308,8 +315,9 @@ codeunit 50010 ParkPosting
 
                             GenJournal.Insert;
                             //Posting CodeUnit
-                            PostCU.setDialog(true);
+                            SingleInstanceCU.Set_HideDialog(true);
                             PostCU.Run(GenJournal);
+                            SingleInstanceCU.Set_HideDialog(false);
 
 
 
@@ -394,8 +402,10 @@ codeunit 50010 ParkPosting
 
                         GenJournal.Insert;
                         //Posting codeunit
-                        PostCU.setDialog(true);
+
+                        SingleInstanceCU.Set_HideDialog(true);
                         PostCU.Run(GenJournal);
+                        SingleInstanceCU.Set_HideDialog(false);
 
                         GenJournal.Reset;
 
@@ -430,8 +440,11 @@ codeunit 50010 ParkPosting
 
 
                         //Post payment
-                        PostCU.setDialog(true);
+
+                        SingleInstanceCU.Set_HideDialog(true);
                         PostCU.Run(GenJournal);
+                        SingleInstanceCU.Set_HideDialog(false);
+
                     end;
 
 
@@ -546,5 +559,7 @@ codeunit 50010 ParkPosting
             AbonementRep.RunModal;
         end;
     end;
+
+
 }
 
