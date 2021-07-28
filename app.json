@@ -1,0 +1,44 @@
+{
+  "id": "dab4b09c-bbee-48a9-bc32-de909b08089b",
+  "name": "SPLN-CARPARK",
+  "publisher": "Simplanova",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [{
+    "id": "63ca2fa4-4f03-4f2b-a480-172fef340d3f",
+    "publisher": "Microsoft",
+    "name": "System Application",
+    "version": "17.0.0.0"
+},
+{
+    "id": "437dbf0e-84ff-417a-965d-ed2bb9650972",
+    "publisher": "Microsoft",
+    "name": "Base Application",
+    "version": "17.0.16993.0"
+}
+],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "18.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50149
+    },
+    {
+      "from": 6069333,
+      "to": 6157587
+	  }
+
+  ],
+  "contextSensitiveHelpUrl": "https://SPLN-CARPARK.com/help/",
+  "showMyCode": true,
+  "runtime": "7.0",
+  "target": "OnPrem"
+}

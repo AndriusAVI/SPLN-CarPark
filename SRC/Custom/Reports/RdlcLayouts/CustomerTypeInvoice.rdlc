@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>21ab1c52-1f22-4b4c-bebf-c7cf9f1458e8</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+      <Fields>
+        <Field Name="DateFrom">
+          <DataField>DateFrom</DataField>
+        </Field>
+        <Field Name="DateTo">
+          <DataField>DateTo</DataField>
+        </Field>
+        <Field Name="PriceGGuest">
+          <DataField>PriceGGuest</DataField>
+        </Field>
+        <Field Name="PriceGGuestFormat">
+          <DataField>PriceGGuestFormat</DataField>
+        </Field>
+        <Field Name="PriceMMonthly">
+          <DataField>PriceMMonthly</DataField>
+        </Field>
+        <Field Name="PriceMMonthlyFormat">
+          <DataField>PriceMMonthlyFormat</DataField>
+        </Field>
+        <Field Name="PriceAAbonement">
+          <DataField>PriceAAbonement</DataField>
+        </Field>
+        <Field Name="PriceAAbonementFormat">
+          <DataField>PriceAAbonementFormat</DataField>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>DataSet</rd:DataSetName>
+        <rd:SchemaPath>Report.xsd</rd:SchemaPath>
+        <rd:TableName>Result</rd:TableName>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Textbox Name="PriceGGuest">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value EvaluationMode="Auto">=First(Fields!PriceGGuest.Value, "DataSet_Result")</Value>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                      <Format>0.0 '€';(0.0 '€')</Format>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>PriceGGuest</rd:DefaultName>
+            <Top>0.24527in</Top>
+            <Left>1.4in</Left>
+            <Height>0.25in</Height>
+            <Width>1in</Width>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+              </Border>
+              <VerticalAlign>Bottom</VerticalAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <rd:FormatSymbolCulture>lt-LT</rd:FormatSymbolCulture>
+            </Style>
+          </Textbox>
+          <Textbox Name="PriceMMonthly">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value EvaluationMode="Auto">=First(Fields!PriceMMonthly.Value, "DataSet_Result")</Value>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                      <Format>0.0 '€';(0.0 '€')</Format>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>PriceMMonthly</rd:DefaultName>
+            <Top>0.49527in</Top>
+            <Left>1.4in</Left>
+            <Height>0.25in</Height>
+            <Width>1in</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+              </Border>
+              <TopBorder>
+                <Color>Black</Color>
+                <Style>Solid</Style>
+                <Width>1pt</Width>
+              </TopBorder>
+              <BottomBorder>
+                <Color>Black</Color>
+                <Style>Solid</Style>
+                <Width>1pt</Width>
+              </BottomBorder>
+              <LeftBorder>
+                <Color>Black</Color>
+                <Style>Solid</Style>
+                <Width>1pt</Width>
+              </LeftBorder>
+              <RightBorder>
+                <Color>Black</Color>
+                <Style>Solid</Style>
+                <Width>1pt</Width>
+              </RightBorder>
+              <VerticalAlign>Bottom</VerticalAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="PriceAAbonement">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value EvaluationMode="Auto">=First(Fields!PriceAAbonement.Value, "DataSet_Result")</Value>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                      <Format>0.0 '€';(0.0 '€')</Format>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>PriceAAbonement</rd:DefaultName>
+            <Top>0.74527in</Top>
+            <Left>1.4in</Left>
+            <Height>0.25in</Height>
+            <Width>1in</Width>
+            <ZIndex>2</ZIndex>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+              </Border>
+              <TopBorder>
+                <Color>Black</Color>
+                <Style>Solid</Style>
+                <Width>1pt</Width>
+              </TopBorder>
+              <BottomBorder>
+                <Color>Black</Color>
+                <Style>Solid</Style>
+                <Width>1pt</Width>
+              </BottomBorder>
+              <LeftBorder>
+                <Color>Black</Color>
+                <Style>Solid</Style>
+                <Width>1pt</Width>
+              </LeftBorder>
+              <RightBorder>
+                <Color>Black</Color>
+                <Style>Solid</Style>
+                <Width>1pt</Width>
+              </RightBorder>
+              <VerticalAlign>Bottom</VerticalAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox1">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value EvaluationMode="Auto">Guest:</Value>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox1</rd:DefaultName>
+            <Top>0.24527in</Top>
+            <Left>0.25417in</Left>
+            <Height>0.25in</Height>
+            <Width>1.14583in</Width>
+            <ZIndex>3</ZIndex>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+              </Border>
+              <TopBorder>
+                <Color>Black</Color>
+                <Style>Solid</Style>
+                <Width>1pt</Width>
+              </TopBorder>
+              <BottomBorder>
+                <Color>Black</Color>
+                <Style>Solid</Style>
+                <Width>1pt</Width>
+              </BottomBorder>
+              <LeftBorder>
+                <Color>Black</Color>
+                <Style>Solid</Style>
+                <Width>1pt</Width>
+              </LeftBorder>
+              <RightBorder>
+                <Color>Black</Color>
+                <Style>Solid</Style>
+                <Width>1pt</Width>
+              </RightBorder>
+              <VerticalAlign>Bottom</VerticalAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox2">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value EvaluationMode="Auto">Monthly:</Value>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox1</rd:DefaultName>
+            <Top>0.49527in</Top>
+            <Left>0.25417in</Left>
+            <Height>0.25in</Height>
+            <Width>1.14583in</Width>
+            <ZIndex>4</ZIndex>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+              </Border>
+              <TopBorder>
+                <Color>Black</Color>
+                <Style>Solid</Style>
+                <Width>1pt</Width>
+              </TopBorder>
+              <BottomBorder>
+                <Color>Black</Color>
+                <Style>Solid</Style>
+                <Width>1pt</Width>
+              </BottomBorder>
+              <LeftBorder>
+                <Color>Black</Color>
+                <Style>Solid</Style>
+                <Width>1pt</Width>
+              </LeftBorder>
+              <RightBorder>
+                <Color>Black</Color>
+                <Style>Solid</Style>
+                <Width>1pt</Width>
+              </RightBorder>
+              <VerticalAlign>Bottom</VerticalAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox3">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value EvaluationMode="Auto">Abonement:</Value>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox1</rd:DefaultName>
+            <Top>0.74527in</Top>
+            <Left>0.25417in</Left>
+            <Height>0.25in</Height>
+            <Width>1.14583in</Width>
+            <ZIndex>5</ZIndex>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+              </Border>
+              <TopBorder>
+                <Color>Black</Color>
+                <Style>Solid</Style>
+                <Width>1pt</Width>
+              </TopBorder>
+              <BottomBorder>
+                <Color>Black</Color>
+                <Style>Solid</Style>
+                <Width>1pt</Width>
+              </BottomBorder>
+              <LeftBorder>
+                <Color>Black</Color>
+                <Style>Solid</Style>
+                <Width>1pt</Width>
+              </LeftBorder>
+              <RightBorder>
+                <Color>Black</Color>
+                <Style>Solid</Style>
+                <Width>1pt</Width>
+              </RightBorder>
+              <VerticalAlign>Bottom</VerticalAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="PriceAAbonement2">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value EvaluationMode="Auto">=First(Fields!PriceGGuest.Value, "DataSet_Result")+First(Fields!PriceMMonthly.Value, "DataSet_Result")+First(Fields!PriceAAbonement.Value, "DataSet_Result")</Value>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                      <Format>0.0 '€';(0.0 '€')</Format>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>PriceAAbonement</rd:DefaultName>
+            <Top>0.99527in</Top>
+            <Left>1.4in</Left>
+            <Height>0.25in</Height>
+            <Width>1in</Width>
+            <ZIndex>6</ZIndex>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+              </Border>
+              <TopBorder>
+                <Color>Black</Color>
+                <Style>Solid</Style>
+                <Width>1pt</Width>
+              </TopBorder>
+              <BottomBorder>
+                <Color>Black</Color>
+                <Style>Solid</Style>
+                <Width>1pt</Width>
+              </BottomBorder>
+              <LeftBorder>
+                <Color>Black</Color>
+                <Style>Solid</Style>
+                <Width>1pt</Width>
+              </LeftBorder>
+              <RightBorder>
+                <Color>Black</Color>
+                <Style>Solid</Style>
+                <Width>1pt</Width>
+              </RightBorder>
+              <VerticalAlign>Bottom</VerticalAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox4">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value EvaluationMode="Auto">Total:</Value>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox1</rd:DefaultName>
+            <Top>0.99527in</Top>
+            <Left>0.25417in</Left>
+            <Height>0.25in</Height>
+            <Width>1.14583in</Width>
+            <ZIndex>7</ZIndex>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+              </Border>
+              <TopBorder>
+                <Color>Black</Color>
+                <Style>Solid</Style>
+                <Width>1pt</Width>
+              </TopBorder>
+              <BottomBorder>
+                <Color>Black</Color>
+                <Style>Solid</Style>
+                <Width>1pt</Width>
+              </BottomBorder>
+              <LeftBorder>
+                <Color>Black</Color>
+                <Style>Solid</Style>
+                <Width>1pt</Width>
+              </LeftBorder>
+              <RightBorder>
+                <Color>Black</Color>
+                <Style>Solid</Style>
+                <Width>1pt</Width>
+              </RightBorder>
+              <VerticalAlign>Bottom</VerticalAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+        </ReportItems>
+        <Height>1.71875in</Height>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <BottomBorder>
+            <Color>Black</Color>
+            <Style>Solid</Style>
+            <Width>1.25pt</Width>
+          </BottomBorder>
+          <LeftBorder>
+            <Color>Black</Color>
+            <Style>Solid</Style>
+            <Width>1.25pt</Width>
+          </LeftBorder>
+          <RightBorder>
+            <Color>Black</Color>
+            <Style>Solid</Style>
+            <Width>1.25pt</Width>
+          </RightBorder>
+        </Style>
+      </Body>
+      <Width>6.61044in</Width>
+      <Page>
+        <PageHeader>
+          <Height>2.14236in</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Textbox Name="Textbox12">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">Montlhy Summary</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>12pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox12</rd:DefaultName>
+              <Top>0.13763in</Top>
+              <Left>0in</Left>
+              <Height>0.26042in</Height>
+              <Width>2.4in</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox14">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">=Globals!ReportName</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>11pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox14</rd:DefaultName>
+              <Top>0.45361in</Top>
+              <Left>0in</Left>
+              <Height>0.25in</Height>
+              <Width>2.4in</Width>
+              <ZIndex>1</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox16">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">="Period: " &amp; First(Fields!DateFrom.Value, "DataSet_Result") &amp;"...."&amp;First(Fields!DateTo.Value, "DataSet_Result")</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>11pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox16</rd:DefaultName>
+              <Top>1.89236in</Top>
+              <Left>0in</Left>
+              <Height>0.25in</Height>
+              <Width>5.25001in</Width>
+              <ZIndex>2</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox17">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">= Now()</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>11pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox17</rd:DefaultName>
+              <Top>0.75917in</Top>
+              <Left>0in</Left>
+              <Height>0.25in</Height>
+              <Width>2.61458in</Width>
+              <ZIndex>3</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox18">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">="Page: " &amp; Globals!OverallPageNumber</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>11pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox18</rd:DefaultName>
+              <Top>1.07861in</Top>
+              <Left>0in</Left>
+              <Height>0.25in</Height>
+              <Width>2.61458in</Width>
+              <ZIndex>4</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="UserID">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">=User!UserID</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>11pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>UserID</rd:DefaultName>
+              <Top>1.39806in</Top>
+              <Left>0in</Left>
+              <Height>0.25in</Height>
+              <Width>2.61458in</Width>
+              <ZIndex>5</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Image Name="Image1">
+              <Source>Embedded</Source>
+              <Value>CarPark</Value>
+              <Sizing>FitProportional</Sizing>
+              <Top>0.34959cm</Top>
+              <Left>5.18751in</Left>
+              <Height>1.00917in</Height>
+              <Width>1.11458in</Width>
+              <ZIndex>6</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Image>
+          </ReportItems>
+          <Style>
+            <Border>
+              <Style>Solid</Style>
+            </Border>
+          </Style>
+        </PageHeader>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <EmbeddedImages>
+    <EmbeddedImage Name="CarPark">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+</Report>
