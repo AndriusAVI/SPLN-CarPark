@@ -46,7 +46,7 @@ report 50040 MonthlyAboInvoice
             }
             column(CustomerTypeFilter1; CustomerTypeFilter1)
             {
-                OptionMembers = ,Guest,Abonement,Monthly;
+
             }
             column(CustomerTypeFilter2; CustomerTypeFilter2)
             {
@@ -93,7 +93,7 @@ report 50040 MonthlyAboInvoice
                 }
                 field(Customer; CustomerNooo)
                 {
-                    TableRelation = Customer."No." WHERE ("Customer Type" = FILTER (Abonement));
+                    TableRelation = Customer."No." WHERE("Customer Type" = FILTER(Abonement));
                 }
             }
         }

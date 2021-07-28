@@ -55,7 +55,7 @@ report 50070 MonthlyReportNew
             }
             dataitem("Posted Park Line"; "Posted Park Line")
             {
-                DataItemLink = "Park Order No." = FIELD ("No.");
+                DataItemLink = "Park Order No." = FIELD("No.");
                 column(ParkOrderNo_PostedParkLine; "Posted Park Line"."Park Order No.")
                 {
                 }
@@ -91,7 +91,7 @@ report 50070 MonthlyReportNew
                 }
                 column(CustomerTypeFilter1; CustomerTypeFilter1)
                 {
-                    OptionMembers = ,Guest,Abonement,Monthly;
+
                 }
                 column(CustomerTypeFilter2; CustomerTypeFilter2)
                 {

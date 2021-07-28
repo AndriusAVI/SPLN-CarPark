@@ -1,5 +1,5 @@
 codeunit 50100 "Employee Location"
-}
+{
     EventSubscriberInstance = StaticAutomatic;
     SingleInstance = true;
     Subtype = Normal;

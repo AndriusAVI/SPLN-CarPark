@@ -1,4 +1,4 @@
-tableextension 99900000 tableextension99900000 extends Customer
+tableextension 50018 tableextension50018 extends Customer
 {
     fields
     {

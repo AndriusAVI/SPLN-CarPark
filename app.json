@@ -28,13 +28,9 @@
   "application": "18.0.0.0",
   "idRanges": [
     {
-      "from": 50100,
-      "to": 50149
-    },
-    {
-      "from": 6069333,
-      "to": 6157587
-	  }
+      "from": 50000,
+      "to": 99999
+    }
 
   ],
   "contextSensitiveHelpUrl": "https://SPLN-CARPARK.com/help/",
