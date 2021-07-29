@@ -23,7 +23,6 @@ page 50270 "Vehicle Traffic Registering"
                             Error('Invalid vehicle number');
                         end
                         else begin
-                            Message(VehReg);
                             RegF(VehReg);
                             VehReg := '';
                         end;

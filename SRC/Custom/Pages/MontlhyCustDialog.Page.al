@@ -135,7 +135,9 @@ page 50140 MontlhyCustDialog
             //CODEUNIT.RUN(CODEUNIT::"Gen. Jnl.-Post",GenJournal);
 
             SingleInstanceCU.Set_HideDialog(true);
+            SingleInstanceCU.Set_isHandled(true);
             PostCU.Run(GenJournal);
+            SingleInstanceCU.Set_isHandled(false);
             SingleInstanceCU.Set_HideDialog(false);
 
             CustLedgInv.SetFilter("Customer No.", CusNo);

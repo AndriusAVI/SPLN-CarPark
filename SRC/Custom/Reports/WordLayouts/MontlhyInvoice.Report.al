@@ -1,7 +1,7 @@
 report 50030 "Montlhy Invoice"
 {
     DefaultLayout = RDLC;
-    RDLCLayout = './MontlhyInvoice.rdlc';
+    RDLCLayout = 'SRC/Custom/Reports/RdlcLayouts/RdlcLayouts/MontlhyInvoice.rdlc';
     UsageCategory = ReportsAndAnalysis;
 
     dataset

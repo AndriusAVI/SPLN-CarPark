@@ -106,6 +106,7 @@ codeunit 50010 ParkPosting
         EventSubscriber: Codeunit EventSubscriber;
         SingleInstanceCU: Codeunit SingleInstanceCU;
     begin
+
         CurrRec.Get;
         if CustomerRec.Get(ParkHeaderRec."Customer No.") then
             if CustomerRec."Customer Type" = 0 then begin
@@ -193,7 +194,9 @@ codeunit 50010 ParkPosting
                     GenJournal.Insert;
 
                     SingleInstanceCU.Set_HideDialog(true);
+                    SingleInstanceCU.Set_isHandled(true);
                     PostCU.Run(GenJournal);
+                    SingleInstanceCU.Set_isHandled(false);
                     SingleInstanceCU.Set_HideDialog(false);
 
                     GenJournal.Reset;
@@ -229,7 +232,9 @@ codeunit 50010 ParkPosting
 
 
                     SingleInstanceCU.Set_HideDialog(true);
+                    SingleInstanceCU.Set_isHandled(true);
                     PostCU.Run(GenJournal);
+                    SingleInstanceCU.Set_isHandled(false);
                     SingleInstanceCU.Set_HideDialog(false);
 
 
@@ -316,7 +321,9 @@ codeunit 50010 ParkPosting
                             GenJournal.Insert;
                             //Posting CodeUnit
                             SingleInstanceCU.Set_HideDialog(true);
+                            SingleInstanceCU.Set_isHandled(true);
                             PostCU.Run(GenJournal);
+                            SingleInstanceCU.Set_isHandled(false);
                             SingleInstanceCU.Set_HideDialog(false);
 
 
@@ -404,7 +411,9 @@ codeunit 50010 ParkPosting
                         //Posting codeunit
 
                         SingleInstanceCU.Set_HideDialog(true);
+                        SingleInstanceCU.Set_isHandled(true);
                         PostCU.Run(GenJournal);
+                        SingleInstanceCU.Set_isHandled(false);
                         SingleInstanceCU.Set_HideDialog(false);
 
                         GenJournal.Reset;
@@ -442,7 +451,9 @@ codeunit 50010 ParkPosting
                         //Post payment
 
                         SingleInstanceCU.Set_HideDialog(true);
+                        SingleInstanceCU.Set_isHandled(true);
                         PostCU.Run(GenJournal);
+                        SingleInstanceCU.Set_isHandled(false);
                         SingleInstanceCU.Set_HideDialog(false);
 
                     end;

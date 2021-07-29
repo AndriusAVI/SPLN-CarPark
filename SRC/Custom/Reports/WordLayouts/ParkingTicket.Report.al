@@ -1,7 +1,7 @@
 report 50050 ParkingTicket
 {
     DefaultLayout = RDLC;
-    RDLCLayout = './ParkingTicket.rdlc';
+    RDLCLayout = 'SRC/Custom/Reports/RdlcLayouts/ParkingTicket.rdlc';
     UsageCategory = ReportsAndAnalysis;
 
     dataset

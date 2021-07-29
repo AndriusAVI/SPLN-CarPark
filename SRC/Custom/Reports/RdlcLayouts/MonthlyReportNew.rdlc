@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -11,144 +11,6 @@
       <rd:DataSourceID>3df3a983-4fe2-46aa-bedd-210eb036b760</rd:DataSourceID>
     </DataSource>
   </DataSources>
-  <DataSets>
-    <DataSet Name="DataSet_Result">
-      <Query>
-        <DataSourceName>DataSource</DataSourceName>
-        <CommandText />
-      </Query>
-      <Fields>
-        <Field Name="No_PostedParkHeader">
-          <DataField>No_PostedParkHeader</DataField>
-        </Field>
-        <Field Name="EmployeeNo_PostedParkHeader">
-          <DataField>EmployeeNo_PostedParkHeader</DataField>
-        </Field>
-        <Field Name="CustomerNo_PostedParkHeader">
-          <DataField>CustomerNo_PostedParkHeader</DataField>
-        </Field>
-        <Field Name="CustomerType_PostedParkHeader">
-          <DataField>CustomerType_PostedParkHeader</DataField>
-        </Field>
-        <Field Name="DocumentDate_PostedParkHeader">
-          <DataField>DocumentDate_PostedParkHeader</DataField>
-        </Field>
-        <Field Name="PostingDate_PostedParkHeader">
-          <DataField>PostingDate_PostedParkHeader</DataField>
-        </Field>
-        <Field Name="TotalAmount_PostedParkHeader">
-          <DataField>TotalAmount_PostedParkHeader</DataField>
-        </Field>
-        <Field Name="TotalAmount_PostedParkHeaderFormat">
-          <DataField>TotalAmount_PostedParkHeaderFormat</DataField>
-        </Field>
-        <Field Name="CustomerName_PostedParkHeader">
-          <DataField>CustomerName_PostedParkHeader</DataField>
-        </Field>
-        <Field Name="Address_PostedParkHeader">
-          <DataField>Address_PostedParkHeader</DataField>
-        </Field>
-        <Field Name="PostCode_PostedParkHeader">
-          <DataField>PostCode_PostedParkHeader</DataField>
-        </Field>
-        <Field Name="City_PostedParkHeader">
-          <DataField>City_PostedParkHeader</DataField>
-        </Field>
-        <Field Name="Payed_PostedParkHeader">
-          <DataField>Payed_PostedParkHeader</DataField>
-        </Field>
-        <Field Name="NoSeries_PostedParkHeader">
-          <DataField>NoSeries_PostedParkHeader</DataField>
-        </Field>
-        <Field Name="Invalid_PostedParkHeader">
-          <DataField>Invalid_PostedParkHeader</DataField>
-        </Field>
-        <Field Name="TotalSum">
-          <DataField>TotalSum</DataField>
-        </Field>
-        <Field Name="TotalSumFormat">
-          <DataField>TotalSumFormat</DataField>
-        </Field>
-        <Field Name="ParkOrderNo_PostedParkLine">
-          <DataField>ParkOrderNo_PostedParkLine</DataField>
-        </Field>
-        <Field Name="LineNo_PostedParkLine">
-          <DataField>LineNo_PostedParkLine</DataField>
-        </Field>
-        <Field Name="CustomerNo_PostedParkLine">
-          <DataField>CustomerNo_PostedParkLine</DataField>
-        </Field>
-        <Field Name="VehicleNo_PostedParkLine">
-          <DataField>VehicleNo_PostedParkLine</DataField>
-        </Field>
-        <Field Name="ParkCity_PostedParkLine">
-          <DataField>ParkCity_PostedParkLine</DataField>
-        </Field>
-        <Field Name="ParkLocation_PostedParkLine">
-          <DataField>ParkLocation_PostedParkLine</DataField>
-        </Field>
-        <Field Name="ParkLocationAddress_PostedParkLine">
-          <DataField>ParkLocationAddress_PostedParkLine</DataField>
-        </Field>
-        <Field Name="ParkingDate_PostedParkLine">
-          <DataField>ParkingDate_PostedParkLine</DataField>
-        </Field>
-        <Field Name="ParkingEndDate_PostedParkLine">
-          <DataField>ParkingEndDate_PostedParkLine</DataField>
-        </Field>
-        <Field Name="Price_PostedParkLine">
-          <DataField>Price_PostedParkLine</DataField>
-        </Field>
-        <Field Name="Price_PostedParkLineFormat">
-          <DataField>Price_PostedParkLineFormat</DataField>
-        </Field>
-        <Field Name="Payed_PostedParkLine">
-          <DataField>Payed_PostedParkLine</DataField>
-        </Field>
-        <Field Name="CustomerTypeFilter1">
-          <DataField>CustomerTypeFilter1</DataField>
-        </Field>
-        <Field Name="CustomerTypeFilter2">
-          <DataField>CustomerTypeFilter2</DataField>
-        </Field>
-        <Field Name="CustomerTypeFilter3">
-          <DataField>CustomerTypeFilter3</DataField>
-        </Field>
-        <Field Name="CustomerTypeFlterOption">
-          <DataField>CustomerTypeFlterOption</DataField>
-        </Field>
-        <Field Name="DateFrom">
-          <DataField>DateFrom</DataField>
-        </Field>
-        <Field Name="DateTo">
-          <DataField>DateTo</DataField>
-        </Field>
-        <Field Name="SumAbo">
-          <DataField>SumAbo</DataField>
-        </Field>
-        <Field Name="SumAboFormat">
-          <DataField>SumAboFormat</DataField>
-        </Field>
-        <Field Name="SumGue">
-          <DataField>SumGue</DataField>
-        </Field>
-        <Field Name="SumGueFormat">
-          <DataField>SumGueFormat</DataField>
-        </Field>
-        <Field Name="SumMon">
-          <DataField>SumMon</DataField>
-        </Field>
-        <Field Name="SumMonFormat">
-          <DataField>SumMonFormat</DataField>
-        </Field>
-      </Fields>
-      <rd:DataSetInfo>
-        <rd:DataSetName>DataSet</rd:DataSetName>
-        <rd:SchemaPath>Report.xsd</rd:SchemaPath>
-        <rd:TableName>Result</rd:TableName>
-      </rd:DataSetInfo>
-    </DataSet>
-  </DataSets>
   <ReportSections>
     <ReportSection>
       <Body>
@@ -2587,4 +2449,137 @@ fPz4pzx5/m/fheGf0oTV64+JjxEtYuItISbeEmLircCY/wM6NJ8Jx04/lgAAAABJRU5ErkJggg==</Im
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
   <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="No_PostedParkHeader">
+          <DataField>No_PostedParkHeader</DataField>
+        </Field>
+        <Field Name="EmployeeNo_PostedParkHeader">
+          <DataField>EmployeeNo_PostedParkHeader</DataField>
+        </Field>
+        <Field Name="CustomerNo_PostedParkHeader">
+          <DataField>CustomerNo_PostedParkHeader</DataField>
+        </Field>
+        <Field Name="CustomerType_PostedParkHeader">
+          <DataField>CustomerType_PostedParkHeader</DataField>
+        </Field>
+        <Field Name="DocumentDate_PostedParkHeader">
+          <DataField>DocumentDate_PostedParkHeader</DataField>
+        </Field>
+        <Field Name="PostingDate_PostedParkHeader">
+          <DataField>PostingDate_PostedParkHeader</DataField>
+        </Field>
+        <Field Name="TotalAmount_PostedParkHeader">
+          <DataField>TotalAmount_PostedParkHeader</DataField>
+        </Field>
+        <Field Name="TotalAmount_PostedParkHeaderFormat">
+          <DataField>TotalAmount_PostedParkHeaderFormat</DataField>
+        </Field>
+        <Field Name="CustomerName_PostedParkHeader">
+          <DataField>CustomerName_PostedParkHeader</DataField>
+        </Field>
+        <Field Name="Address_PostedParkHeader">
+          <DataField>Address_PostedParkHeader</DataField>
+        </Field>
+        <Field Name="PostCode_PostedParkHeader">
+          <DataField>PostCode_PostedParkHeader</DataField>
+        </Field>
+        <Field Name="City_PostedParkHeader">
+          <DataField>City_PostedParkHeader</DataField>
+        </Field>
+        <Field Name="Payed_PostedParkHeader">
+          <DataField>Payed_PostedParkHeader</DataField>
+        </Field>
+        <Field Name="NoSeries_PostedParkHeader">
+          <DataField>NoSeries_PostedParkHeader</DataField>
+        </Field>
+        <Field Name="Invalid_PostedParkHeader">
+          <DataField>Invalid_PostedParkHeader</DataField>
+        </Field>
+        <Field Name="TotalSum">
+          <DataField>TotalSum</DataField>
+        </Field>
+        <Field Name="TotalSumFormat">
+          <DataField>TotalSumFormat</DataField>
+        </Field>
+        <Field Name="ParkOrderNo_PostedParkLine">
+          <DataField>ParkOrderNo_PostedParkLine</DataField>
+        </Field>
+        <Field Name="LineNo_PostedParkLine">
+          <DataField>LineNo_PostedParkLine</DataField>
+        </Field>
+        <Field Name="CustomerNo_PostedParkLine">
+          <DataField>CustomerNo_PostedParkLine</DataField>
+        </Field>
+        <Field Name="VehicleNo_PostedParkLine">
+          <DataField>VehicleNo_PostedParkLine</DataField>
+        </Field>
+        <Field Name="ParkCity_PostedParkLine">
+          <DataField>ParkCity_PostedParkLine</DataField>
+        </Field>
+        <Field Name="ParkLocation_PostedParkLine">
+          <DataField>ParkLocation_PostedParkLine</DataField>
+        </Field>
+        <Field Name="ParkLocationAddress_PostedParkLine">
+          <DataField>ParkLocationAddress_PostedParkLine</DataField>
+        </Field>
+        <Field Name="ParkingDate_PostedParkLine">
+          <DataField>ParkingDate_PostedParkLine</DataField>
+        </Field>
+        <Field Name="ParkingEndDate_PostedParkLine">
+          <DataField>ParkingEndDate_PostedParkLine</DataField>
+        </Field>
+        <Field Name="Price_PostedParkLine">
+          <DataField>Price_PostedParkLine</DataField>
+        </Field>
+        <Field Name="Price_PostedParkLineFormat">
+          <DataField>Price_PostedParkLineFormat</DataField>
+        </Field>
+        <Field Name="Payed_PostedParkLine">
+          <DataField>Payed_PostedParkLine</DataField>
+        </Field>
+        <Field Name="CustomerTypeFilter1">
+          <DataField>CustomerTypeFilter1</DataField>
+        </Field>
+        <Field Name="CustomerTypeFilter2">
+          <DataField>CustomerTypeFilter2</DataField>
+        </Field>
+        <Field Name="CustomerTypeFilter3">
+          <DataField>CustomerTypeFilter3</DataField>
+        </Field>
+        <Field Name="CustomerTypeFlterOption">
+          <DataField>CustomerTypeFlterOption</DataField>
+        </Field>
+        <Field Name="DateFrom">
+          <DataField>DateFrom</DataField>
+        </Field>
+        <Field Name="DateTo">
+          <DataField>DateTo</DataField>
+        </Field>
+        <Field Name="SumAbo">
+          <DataField>SumAbo</DataField>
+        </Field>
+        <Field Name="SumAboFormat">
+          <DataField>SumAboFormat</DataField>
+        </Field>
+        <Field Name="SumGue">
+          <DataField>SumGue</DataField>
+        </Field>
+        <Field Name="SumGueFormat">
+          <DataField>SumGueFormat</DataField>
+        </Field>
+        <Field Name="SumMon">
+          <DataField>SumMon</DataField>
+        </Field>
+        <Field Name="SumMonFormat">
+          <DataField>SumMonFormat</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
 </Report>

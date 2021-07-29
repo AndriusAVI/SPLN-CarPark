@@ -2,7 +2,7 @@ report 50010 "Comulative Cheque"
 {
     // =DATEDIFF("h",Fields!ParkingDate.Value,Fields!ParkingEndDate.Value) & ":" & DATEDIFF("n",Fields!ParkingDate.Value, Fields!ParkingEndDate.Value) MOD 60 & ":" & DATEDIFF("s",Fields!ParkingDate.Value, Fields!ParkingEndDate.Value) MOD 60
     DefaultLayout = RDLC;
-    RDLCLayout = './ComulativeCheque.rdlc';
+    RDLCLayout = 'SRC/Custom/Reports/RdlcLayouts/ComulativeCheque.rdlc';
 
     UsageCategory = ReportsAndAnalysis;
 

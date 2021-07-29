@@ -1,7 +1,7 @@
 report 50040 MonthlyAboInvoice
 {
     DefaultLayout = RDLC;
-    RDLCLayout = './MonthlyAboInvoice.rdlc';
+    RDLCLayout = 'SRC/Custom/Reports/RdlcLayouts/MonthlyAboInvoice.rdlc';
     UsageCategory = Tasks;
 
     dataset

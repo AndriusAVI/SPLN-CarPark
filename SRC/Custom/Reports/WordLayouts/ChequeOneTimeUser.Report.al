@@ -1,7 +1,7 @@
 report 50000 ChequeOneTimeUser
 {
     DefaultLayout = RDLC;
-    RDLCLayout = './ChequeOneTimeUser.rdlc';
+    RDLCLayout = 'SRC/Custom/Reports/RdlcLayouts/ChequeOneTimeUser.rdlc';
     UsageCategory = ReportsAndAnalysis;
 
     dataset

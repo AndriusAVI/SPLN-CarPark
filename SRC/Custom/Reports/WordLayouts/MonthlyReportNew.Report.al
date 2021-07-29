@@ -1,7 +1,7 @@
 report 50070 MonthlyReportNew
 {
     DefaultLayout = RDLC;
-    RDLCLayout = './MonthlyReportNew.rdlc';
+    RDLCLayout = 'SRC/Custom/Reports/RdlcLayouts/MonthlyReportNew.rdlc';
     UsageCategory = ReportsAndAnalysis;
 
     dataset

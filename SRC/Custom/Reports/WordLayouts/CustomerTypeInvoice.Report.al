@@ -21,7 +21,7 @@ report 50060 CustomerTypeInvoice
     // PriceAbonement:=PriceAbonement+PostedParkHeader."Total Amount";
     //       UNTIL PostedParkHeader.NEXT=0;
     DefaultLayout = RDLC;
-    RDLCLayout = './CustomerTypeInvoice.rdlc';
+    RDLCLayout = 'SRC/Custom/Reports/RdlcLayouts/CustomerTypeInvoice.rdlc';
 
     UsageCategory = ReportsAndAnalysis;
 

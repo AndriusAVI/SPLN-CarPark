@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -11,39 +11,6 @@
       <rd:DataSourceID>c27c673d-f16a-43c3-b605-b3a2bf9fcfc1</rd:DataSourceID>
     </DataSource>
   </DataSources>
-  <DataSets>
-    <DataSet Name="DataSet_Result">
-      <Query>
-        <DataSourceName>DataSource</DataSourceName>
-        <CommandText />
-      </Query>
-      <Fields>
-        <Field Name="LicensePlate">
-          <DataField>LicensePlate</DataField>
-        </Field>
-        <Field Name="FromT">
-          <DataField>FromT</DataField>
-        </Field>
-        <Field Name="ToT">
-          <DataField>ToT</DataField>
-        </Field>
-        <Field Name="Hours">
-          <DataField>Hours</DataField>
-        </Field>
-        <Field Name="Pricee">
-          <DataField>Pricee</DataField>
-        </Field>
-        <Field Name="PriceeFormat">
-          <DataField>PriceeFormat</DataField>
-        </Field>
-      </Fields>
-      <rd:DataSetInfo>
-        <rd:DataSetName>DataSet</rd:DataSetName>
-        <rd:SchemaPath>Report.xsd</rd:SchemaPath>
-        <rd:TableName>Result</rd:TableName>
-      </rd:DataSetInfo>
-    </DataSet>
-  </DataSets>
   <ReportSections>
     <ReportSection>
       <Body>
@@ -548,12 +515,6 @@
       </Page>
     </ReportSection>
   </ReportSections>
-  <ReportParametersLayout>
-    <GridLayoutDefinition>
-      <NumberOfColumns>4</NumberOfColumns>
-      <NumberOfRows>2</NumberOfRows>
-    </GridLayoutDefinition>
-  </ReportParametersLayout>
   <Code>Public Function BlankZero(ByVal Value As Decimal)
     if Value = 0 then
         Return ""
@@ -603,4 +564,32 @@ fPz4pzx5/m/fheGf0oTV64+JjxEtYuItISbeEmLircCY/wM6NJ8Jx04/lgAAAABJRU5ErkJggg==</Im
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
   <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="LicensePlate">
+          <DataField>LicensePlate</DataField>
+        </Field>
+        <Field Name="FromT">
+          <DataField>FromT</DataField>
+        </Field>
+        <Field Name="ToT">
+          <DataField>ToT</DataField>
+        </Field>
+        <Field Name="Hours">
+          <DataField>Hours</DataField>
+        </Field>
+        <Field Name="Pricee">
+          <DataField>Pricee</DataField>
+        </Field>
+        <Field Name="PriceeFormat">
+          <DataField>PriceeFormat</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
 </Report>

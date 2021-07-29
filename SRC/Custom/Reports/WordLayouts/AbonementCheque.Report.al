@@ -1,7 +1,7 @@
 report 50020 "Abonement Cheque"
 {
     DefaultLayout = RDLC;
-    RDLCLayout = './AbonementCheque.rdlc';
+    RDLCLayout = 'SRC/Custom/Reports/RdlcLayouts/AbonementCheque.rdlc';
     UsageCategory = ReportsAndAnalysis;
 
     dataset
