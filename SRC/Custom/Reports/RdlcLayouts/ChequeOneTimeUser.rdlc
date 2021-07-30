@@ -19,22 +19,22 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>1.0532in</Width>
+                  <Width>1.04861in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.37612in</Width>
+                  <Width>1.37153in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.46987in</Width>
+                  <Width>1.46528in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.57404in</Width>
+                  <Width>0.56945in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.21987in</Width>
+                  <Width>1.21528in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.83445in</Width>
+                  <Width>0.82986in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -50,7 +50,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value EvaluationMode="Auto" />
+                                  <Value />
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Calibri</FontFamily>
@@ -103,7 +103,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value EvaluationMode="Auto">Parking Time</Value>
+                                  <Value>Parking Time</Value>
                                   <Style>
                                     <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
@@ -161,7 +161,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value EvaluationMode="Auto" />
+                                  <Value />
                                   <Style>
                                     <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
@@ -206,7 +206,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value EvaluationMode="Auto" />
+                                  <Value />
                                   <Style>
                                     <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
@@ -252,7 +252,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value EvaluationMode="Auto">License plate no.</Value>
+                                  <Value>License plate no.</Value>
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Calibri</FontFamily>
@@ -305,7 +305,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value EvaluationMode="Auto">From</Value>
+                                  <Value>From</Value>
                                   <Style>
                                     <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
@@ -360,7 +360,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value EvaluationMode="Auto">To</Value>
+                                  <Value>To</Value>
                                   <Style>
                                     <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
@@ -374,7 +374,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value EvaluationMode="Auto" />
+                                  <Value />
                                   <Style>
                                     <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
@@ -429,7 +429,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value EvaluationMode="Auto">Hrs.</Value>
+                                  <Value>Hrs.</Value>
                                   <Style>
                                     <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
@@ -484,7 +484,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value EvaluationMode="Auto">Rate</Value>
+                                  <Value>Rate</Value>
                                   <Style>
                                     <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
@@ -539,7 +539,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value EvaluationMode="Auto">Amount</Value>
+                                  <Value>Amount</Value>
                                   <Style>
                                     <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
@@ -589,7 +589,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value EvaluationMode="Auto">=Fields!LicensePlate.Value</Value>
+                                  <Value>=Fields!LicensePlate.Value</Value>
                                   <Style>
                                     <FontWeight>Normal</FontWeight>
                                   </Style>
@@ -621,7 +621,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value EvaluationMode="Auto">=Fields!FromT.Value</Value>
+                                  <Value>=Fields!FromT.Value</Value>
                                   <Style>
                                     <FontWeight>Normal</FontWeight>
                                     <Format>MM/dd/yyyy HH:mm</Format>
@@ -654,7 +654,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value EvaluationMode="Auto">=Fields!ToT.Value</Value>
+                                  <Value>=Fields!ToT.Value</Value>
                                   <Style>
                                     <FontWeight>Normal</FontWeight>
                                     <Format>MM/dd/yyyy HH:mm</Format>
@@ -687,7 +687,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value EvaluationMode="Auto">=Fields!Hours.Value</Value>
+                                  <Value>=Fields!Hours.Value</Value>
                                   <Style>
                                     <FontWeight>Normal</FontWeight>
                                     <Format>0.0;(0.0)</Format>
@@ -720,7 +720,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value EvaluationMode="Auto">=Fields!PriceRate.Value</Value>
+                                  <Value>=Fields!PriceRate.Value</Value>
                                   <Style>
                                     <FontWeight>Normal</FontWeight>
                                     <Format>0.0 '€';(0.0 '€')</Format>
@@ -743,7 +743,6 @@
                             <rd:FormatSymbolCulture>lt-LT</rd:FormatSymbolCulture>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -755,7 +754,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value EvaluationMode="Auto">=Fields!PriceP.Value</Value>
+                                  <Value>=Fields!PriceP.Value</Value>
                                   <Style>
                                     <FontWeight>Normal</FontWeight>
                                     <Format>0.0 '€';(0.0 '€')</Format>
@@ -794,7 +793,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value EvaluationMode="Auto" />
+                                  <Value />
                                   <Style>
                                     <FontWeight>Normal</FontWeight>
                                   </Style>
@@ -826,7 +825,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value EvaluationMode="Auto" />
+                                  <Value />
                                   <Style>
                                     <FontWeight>Normal</FontWeight>
                                   </Style>
@@ -858,7 +857,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value EvaluationMode="Auto">Total amount</Value>
+                                  <Value>Total amount</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                     <Format>0.0 '';(0.0 '')</Format>
@@ -902,7 +901,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value EvaluationMode="Auto">= SUM(Fields!PriceP.Value)</Value>
+                                  <Value>= SUM(Fields!PriceP.Value)</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                     <Format>0.0 '€';(0.0 '€')</Format>
@@ -966,8 +965,9 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet_Result</DataSetName>
+            <Left>0.02329cm</Left>
             <Height>1.11458in</Height>
-            <Width>6.52755in</Width>
+            <Width>6.5in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -981,7 +981,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value EvaluationMode="Auto">Company Information</Value>
+                    <Value>Company Information</Value>
                     <Style>
                       <FontFamily>Calibri</FontFamily>
                       <FontSize>12pt</FontSize>
@@ -993,8 +993,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox17</rd:DefaultName>
-            <Top>1.97223in</Top>
-            <Left>0.12723in</Left>
+            <Top>3.00696in</Top>
+            <Left>0.00917in</Left>
             <Height>0.25in</Height>
             <Width>2.11459in</Width>
             <ZIndex>1</ZIndex>
@@ -1015,7 +1015,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value EvaluationMode="Auto">Name: Vilnius CarPark</Value>
+                    <Value>Name: Vilnius CarPark</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontFamily>Calibri</FontFamily>
@@ -1029,8 +1029,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox18</rd:DefaultName>
-            <Top>2.22223in</Top>
-            <Left>0.12723in</Left>
+            <Top>3.25696in</Top>
+            <Left>0.00917in</Left>
             <Height>0.2257in</Height>
             <Width>2.11459in</Width>
             <ZIndex>2</ZIndex>
@@ -1051,7 +1051,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value EvaluationMode="Auto">Company Code: 1458252</Value>
+                    <Value>Company Code: 1458252</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontFamily>Calibri</FontFamily>
@@ -1065,8 +1065,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox18</rd:DefaultName>
-            <Top>2.66667in</Top>
-            <Left>0.12723in</Left>
+            <Top>3.7014in</Top>
+            <Left>0.00917in</Left>
             <Height>0.18055in</Height>
             <Width>2.11459in</Width>
             <ZIndex>3</ZIndex>
@@ -1087,7 +1087,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value EvaluationMode="Auto">Account Number: LT14258692452</Value>
+                    <Value>Account Number: LT14258692452</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontFamily>Calibri</FontFamily>
@@ -1102,7 +1102,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value EvaluationMode="Auto" />
+                    <Value />
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontFamily>Calibri</FontFamily>
@@ -1116,8 +1116,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox22</rd:DefaultName>
-            <Top>2.46181in</Top>
-            <Left>0.12723in</Left>
+            <Top>3.49654in</Top>
+            <Left>0.00917in</Left>
             <Height>0.17708in</Height>
             <Width>2.11459in</Width>
             <ZIndex>4</ZIndex>
@@ -1132,26 +1132,25 @@
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>3.02084in</Height>
+        <Height>3.88889in</Height>
         <Style>
           <Border>
             <Style>Solid</Style>
           </Border>
         </Style>
       </Body>
-      <Width>6.53797in</Width>
+      <Width>6.50917in</Width>
       <Page>
         <PageHeader>
           <Height>1.5925in</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
-          <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
             <Image Name="Image2">
               <Source>Embedded</Source>
               <Value>CarPark</Value>
               <Sizing>FitProportional</Sizing>
-              <Top>0.02431in</Top>
-              <Left>2.79836in</Left>
+              <Top>0.0382in</Top>
+              <Left>2.80753in</Left>
               <Height>0.75222in</Height>
               <Width>0.85417in</Width>
               <Style>
@@ -1167,7 +1166,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">Parking Ticket</Value>
+                      <Value>Parking Ticket</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Calibri</FontFamily>
@@ -1183,8 +1182,9 @@
               </Paragraphs>
               <rd:DefaultName>Textbox2</rd:DefaultName>
               <Top>0.79042in</Top>
+              <Left>0.02329cm</Left>
               <Height>0.38889in</Height>
-              <Width>6.51836in</Width>
+              <Width>6.5in</Width>
               <ZIndex>1</ZIndex>
               <Style>
                 <Border>
@@ -1199,9 +1199,9 @@
             </Textbox>
             <Line Name="Line1">
               <Top>1.17931in</Top>
-              <Left>0.01836in</Left>
+              <Left>0.02753in</Left>
               <Height>0in</Height>
-              <Width>6.49083in</Width>
+              <Width>6.48164in</Width>
               <ZIndex>2</ZIndex>
               <Style>
                 <Border>
@@ -1211,9 +1211,9 @@
             </Line>
             <Line Name="Line2">
               <Top>0.79042in</Top>
-              <Left>0.01836in</Left>
+              <Left>0.02753in</Left>
               <Height>0in</Height>
-              <Width>6.5in</Width>
+              <Width>6.48164in</Width>
               <ZIndex>3</ZIndex>
               <Style>
                 <Border>
@@ -1228,7 +1228,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">="Issue date: " &amp; Today</Value>
+                      <Value>="Issue date: " &amp; Today</Value>
                       <Style>
                         <FontFamily>Calibri</FontFamily>
                         <FontSize>11pt</FontSize>
@@ -1245,7 +1245,7 @@
               <rd:DefaultName>Textbox3</rd:DefaultName>
               <Top>1.17931in</Top>
               <Height>0.40626in</Height>
-              <Width>6.51836in</Width>
+              <Width>6.5in</Width>
               <ZIndex>4</ZIndex>
               <Style>
                 <Border>
@@ -1267,7 +1267,7 @@
                     <Paragraph>
                       <TextRuns>
                         <TextRun>
-                          <Value EvaluationMode="Auto">UAB "Vilnius CarPark"</Value>
+                          <Value>UAB "Vilnius CarPark"</Value>
                           <Style>
                             <FontStyle>Normal</FontStyle>
                             <FontFamily>Calibri</FontFamily>
@@ -1295,7 +1295,7 @@
                 </Textbox>
               </ReportItems>
               <KeepTogether>true</KeepTogether>
-              <Left>0.01836in</Left>
+              <Left>0.02753in</Left>
               <Height>0.25in</Height>
               <Width>1.66667in</Width>
               <ZIndex>5</ZIndex>
@@ -1312,8 +1312,10 @@
             </Border>
           </Style>
         </PageHeader>
-        <PageHeight>3in</PageHeight>
-        <PageWidth>6.5in</PageWidth>
+        <PageHeight>6in</PageHeight>
+        <PageWidth>6.6in</PageWidth>
+        <InteractiveHeight>6in</InteractiveHeight>
+        <InteractiveWidth>6.6in</InteractiveWidth>
         <Style>
           <Border>
             <Style>Solid</Style>

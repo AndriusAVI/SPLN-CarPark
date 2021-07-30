@@ -3,7 +3,6 @@ report 50000 ChequeOneTimeUser
     DefaultLayout = RDLC;
     RDLCLayout = 'SRC/Custom/Reports/RdlcLayouts/ChequeOneTimeUser.rdlc';
     UsageCategory = ReportsAndAnalysis;
-
     dataset
     {
         dataitem("Park Line"; "Park Line")

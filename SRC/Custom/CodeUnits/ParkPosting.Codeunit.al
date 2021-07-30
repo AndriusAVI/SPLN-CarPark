@@ -330,7 +330,7 @@ codeunit 50010 ParkPosting
 
 
                             ParkJournalLineRec.Init;
-                            ParkJournalLineRec."Entry No." := MaxAmt;
+                            ParkJournalLineRec."Entry No." := MaxAmt + 1;
                             ParkJournalLineRec."Customer No." := PostedParkLineRec."Customer No.";
                             ParkJournalLineRec."Document No." := PostedParkLineRec."Park Order No.";
                             ParkJournalLineRec."Posting Date" := Today;

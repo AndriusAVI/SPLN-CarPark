@@ -11,7 +11,7 @@ page 50290 CustomerNewFromDialog
             {
                 field("Customer No"; "No.")
                 {
-                    TableRelation = Customer."No." WHERE (IsParkCustomer = FILTER (true));
+                    TableRelation = Customer."No." WHERE(IsParkCustomer = FILTER(true));
 
                     trigger OnValidate()
                     begin
@@ -28,6 +28,7 @@ page 50290 CustomerNewFromDialog
                             PostCode := CusFind."Post Code";
                             "Customer Type" := CusFind."Customer Type";
                             "Country Of Registration" := CusFind."Country/Region Code";
+
                         end;
 
                     end;
@@ -122,7 +123,9 @@ page 50290 CustomerNewFromDialog
                 CustomerCar."Country of Registration" := "Country Of Registration";
                 CustomerCar."License Plate Number" := VehicleNoVar;
                 CustomerCar."Country of Registration" := CRCode;
+                CustomerRec."Customer Type" := "Customer Type";
                 CustomerCar.Insert;
+                CustomerRec.Modify();
                 VehicleRegisteringPage.RegF(VehicleNoVar);
             end
             else begin
